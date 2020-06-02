@@ -38,8 +38,6 @@ cases = spanTextList[indices[1]+1]
 active = spanTextList[indices[1]+4]
 
 # Set current row to first empty row
-#currentRow=worksheet.get_highest_row()
-
 for cell in ws['A']:
     if cell.value is None:
         currentRow = cell.row
