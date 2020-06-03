@@ -47,7 +47,7 @@ for cell in ws['A']:
 
 # Write data to worksheet
 ws.cell(row=currentRow,column=dateCol).value = today.strftime("%d %b")
-ws.cell(row=currentRow,column=casesCol).value = spanTextList[indices[1]+1]
-ws.cell(row=currentRow,column=activeCol).value = spanTextList[indices[1]+4]
+ws.cell(row=currentRow,column=casesCol).value = cases
+ws.cell(row=currentRow,column=activeCol).value = active
 
 wb.save('GCC2.xlsx')
